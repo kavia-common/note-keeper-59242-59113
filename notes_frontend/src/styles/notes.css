@@ -1,0 +1,154 @@
+:root {
+  --bg: #ffffff;
+  --text: #111827;
+  --muted: #6b7280;
+  --primary: #2563eb;
+  --primary-600: #1d4ed8;
+  --danger: #dc2626;
+  --border: #e5e7eb;
+  --surface: #f9fafb;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.title {
+  font-size: 1.75rem;
+  margin: 0;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+}
+
+.button {
+  appearance: none;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--text);
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+.button.primary {
+  background: var(--primary);
+  color: white;
+  border-color: var(--primary);
+}
+.button.primary:hover { background: var(--primary-600); }
+.button.danger {
+  background: #fee2e2;
+  border-color: #fecaca;
+  color: var(--danger);
+}
+.button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.list-item {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+}
+.item-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.item-title {
+  font-weight: 600;
+  margin: 0;
+}
+.item-date {
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+.item-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.form {
+  display: grid;
+  gap: 12px;
+}
+.field {
+  display: grid;
+  gap: 6px;
+}
+.label {
+  font-weight: 600;
+}
+.input, .textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  font-size: 1rem;
+  color: var(--text);
+}
+.textarea {
+  min-height: 160px;
+  resize: vertical;
+}
+
+.helper {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.alert {
+  border: 1px solid #fecaca;
+  background: #fef2f2;
+  color: #991b1b;
+  padding: 10px 12px;
+  border-radius: 8px;
+}
+
+.success {
+  border: 1px solid #bbf7d0;
+  background: #f0fdf4;
+  color: #14532d;
+  padding: 10px 12px;
+  border-radius: 8px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
